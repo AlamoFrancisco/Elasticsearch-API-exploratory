@@ -20,28 +20,33 @@ The next step should be to transform the input text into a normal form of your c
 
 Used:
 ```
-"__chard_filter__": __html_strip__ 
-"__filter__": __lowercase__, __word_delimiter__
-"__tokenizer__" : __standard__
+"chard_filter": "html_strip"
+"filter": ["lowercase", "word_delimiter"]
+"tokenizer": "standard"
 ```
 
 #### •	Selecting Keywords: 
 One aim of your system is to identify the words and phrases in the text that are most useful for indexing purposes. So the best approach is to remove words which are not “useful”. E.g. very frequent words or stopwords. Also will be a good to get a great score for your search applying tf.idf.
 
 Used:
-"__filter__" : __type__: __stop__, 
-           "__stopwords__": __english__
-"__similarity__": __BM25__
+```
+"filter": 
+    "type": "stop", 
+    "stopwords": "_english_"
+"similarity": "BM25"
+```
 
 #### •	Stemming or Morphological Analysis: 
 Writing word stems to the database rather than words allows to treat various inflected forms of a word in the same way, e.g. bus and busses refer to exactly the same thing even though they are different words. Here was used Ngrams which are a great way to autocomplete your search.
 
 Used:
-"__tokenizer__": 
-     __type__: __edge_ngram__, 
-     "__min_gram__": 2, 
-     "__max_gram__":10,
-     "__token_chars__":["__letter"__,"__digit__"]
+```
+"tokenizer__": 
+     "type": "edge_ngram", 
+     "min_gram": 2, 
+     "max_gram":10,
+     "token_chars":["letter","digit"]
+```
 ---
 ## References
 Elasticsearch guide [8.0](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
