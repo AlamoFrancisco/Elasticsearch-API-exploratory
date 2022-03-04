@@ -41,6 +41,6 @@ Used:
      "__max_gram__":10,
      "__token_chars__":["__letter"__,"__digit__"]
 ---
-<i class="fas fa-book"></i> Elasticsearch guide [8.0](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
-
-<i class="fas fa-book"></i>  W. Bruce Croft; Donald Metzler; Trevor Strohman. 2010. Search engines: information retrieval in practice. [Pearson Education.](http://ciir.cs.umass.edu/downloads/SEIRiP.pdf) 
+## References
+Elasticsearch guide [8.0](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
+W. Bruce Croft; Donald Metzler; Trevor Strohman. 2010. Search engines: information retrieval in practice. [Pearson Education.](http://ciir.cs.umass.edu/downloads/SEIRiP.pdf) 
