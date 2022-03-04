@@ -19,9 +19,11 @@ The third step was to convert the updated sample into JSON as elasticsearch work
 The next step should be to transform the input text into a normal form of your choice. This should include the identification of sentences, bullet points and cells in tables. 
 
 Used:
-"__chard_filter__": __html_strip__
+```
+"__chard_filter__": __html_strip__ 
 "__filter__": __lowercase__, __word_delimiter__
 "__tokenizer__" : __standard__
+```
 
 #### •	Selecting Keywords: 
 One aim of your system is to identify the words and phrases in the text that are most useful for indexing purposes. So the best approach is to remove words which are not “useful”. E.g. very frequent words or stopwords. Also will be a good to get a great score for your search applying tf.idf.
